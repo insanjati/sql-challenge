@@ -21,7 +21,7 @@ WHERE name LIKE '%mac%';
 
 -- #4
 -- Count all paid orders with SKU IPHX-001.
-SELECT SUM(total) AS paid_orders
+SELECT COUNT(total) AS paid_orders
 FROM orders
 WHERE item LIKE '%IPHX-001%' AND status = 'paid';
 
