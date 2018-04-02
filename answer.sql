@@ -85,8 +85,7 @@ WHERE user_id = 3 AND status = 'paid';
 -- #14
 -- Find all paid orders with courier ID 2 made by user ID 1.
 SELECT * FROM orders
-JOIN couriers ON orders.courier_id = couriers.id
-WHERE couriers.id = 2;
+WHERE user_id = 1 AND courier_id = 2 AND status = 'paid';
 
 -- #15
 -- Find all orders that contains SKU IPHX-001.
