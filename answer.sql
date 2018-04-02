@@ -56,7 +56,7 @@ WHERE created_at LIKE '%2018-02%';
 -- Find all orders made between 1st March to 15th March.
 SELECT *
 FROM orders
-WHERE created_at BETWEEN '2018-03-01 00:00:00.000000' AND '2018-03-16 00:00:00.000000';
+WHERE created_at BETWEEN '2018-03-01' AND '2018-03-16';
 
 
 -- #10
